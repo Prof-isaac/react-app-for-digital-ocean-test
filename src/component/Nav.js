@@ -4,7 +4,7 @@ import "../App.css";
 
 const Nav = () => {
   const router = useHistory();
-  console.log("router", router);
+  console.log("router", router.location.search);
   const isActive = (route) => {
     if (route === router.location.pathname) {
       return "active";
